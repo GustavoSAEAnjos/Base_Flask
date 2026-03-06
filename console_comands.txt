@@ -1,0 +1,21 @@
+VENV:
+    (PowerShell)
+    Criando:    python -m venv ambiente
+    Ativando:   .\ambiente\Scripts\activate
+
+    Se der erro de permissão de script: 
+    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+
+    Manipulando as depêndencias do projeto:
+        
+    Colocar as depêndencias dentro do requirements.txt:
+    pip freeze > requirements.txt
+    (Nota, esse comando só faz alguma coisa quando as depêndencias já estão 
+    instaladas no ambiente virtual, instale com pip e depois de freeze)
+
+    Baixando as depêndencias do requirements.txt:
+    pip install -r requirements.txt
+
+    Dando update no pip (Se não estiver na versão mais atualizada):
+    python.exe -m pip install --upgrade pip
+    

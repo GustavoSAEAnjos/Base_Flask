@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#5f9cff,#7ce0c3);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    width:50%;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h1{
+    margin-bottom:10px;
+    color:#333;
+}
+
+.card{
+    margin-top:20px;
+    padding:20px;
+    border-radius:10px;
+    background:#f5f7fb;
+}
+
+.contador{
+    font-size:32px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    margin-top:10px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px;
+    width:100%;
+    border:none;
+    border-radius:8px;
+    background:#5f9cff;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#4b83d9;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#7ce0c3;
+    color:#222;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.botao:hover{
+    background:#64c9ad;
+}
+
+.tabela{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+.tabela th{
+    background:#5f9cff;
+    color:white;
+    padding:10px;
+}
+
+.tabela td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+.tabela tr:hover{
+    background:#f1f1f1;
+}
+
+.central{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.caixa{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+.linha{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+    align-items:flex-start;
+}
+
+.form-card{
+    width:300px;
+}
+
+.tabela-card{
+    flex:1;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}

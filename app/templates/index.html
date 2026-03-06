@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Inicial</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Exemplo Flask</h1>
+    <div class="linha">
+
+        <!-- FORMULÁRIO -->
+        <div class="card form-card">
+
+            <h2>Criar novo usuário</h2>
+
+            <form method="POST" action="{{ url_for('main.home') }}">
+
+                <input 
+                    type="text" 
+                    name="nome" 
+                    placeholder="Nome"
+                    required
+                >
+
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Email"
+                    required
+                >
+
+                <input 
+                    type="password" 
+                    name="senha" 
+                    placeholder="Senha"
+                    required
+                >
+
+                <button type="submit">
+                    Criar usuário
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- LISTA DE USUÁRIOS -->
+        <div class="card tabela-card">
+
+            <h2>Usuários</h2>
+
+            <table class="tabela">
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    {% for usuario in usuarios %}
+                    <tr>
+                        <td>{{ usuario.id }}</td>
+                        <td>{{ usuario.nome }}</td>
+                        <td>{{ usuario.email }}</td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Outros exemplos</h2>
+
+        <a class="botao" href="{{ url_for('main.exemplo_rota') }}">
+            Ir para exemplo de rota
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
