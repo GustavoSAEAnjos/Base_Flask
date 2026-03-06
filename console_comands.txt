@@ -18,4 +18,8 @@ VENV:
 
     Dando update no pip (Se não estiver na versão mais atualizada):
     python.exe -m pip install --upgrade pip
+
+FLASK:
+    Quando tudo estiver pronto, apenas use o comando:
+    Flask run
     
